@@ -8,3 +8,5 @@ url1 = f"https://docs.google.com/spreadsheets/d/{sheet_id}/gviz/tq?tqx=out:csv&s
 
 df = pd.read_csv(url1)
 st.dataframe(df.head())
+columns = df.iloc[1:,0:17]
+st.dataframe(columns)
