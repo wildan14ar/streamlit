@@ -1,5 +1,6 @@
 import streamlit as st
 from PIL import Image
+import sklearn
 
 img = Image.open ('assets/photo.jpg')
 new_size = img.resize ((250,250))
